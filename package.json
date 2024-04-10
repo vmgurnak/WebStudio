@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/WebStudio-site/",
+    "build": "vite build --base=/WebStudio/",
     "preview": "vite preview"
   },
   "devDependencies": {
