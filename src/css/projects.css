@@ -1,0 +1,35 @@
+/* ----------------PROJECTS--------------- */
+
+.projects {
+  padding-top: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 1158px) {
+  .projects {
+    display: block;
+  }
+}
+
+.projects-container {
+}
+
+.projects-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+
+  margin-bottom: 72px;
+}
+
+.projects-list {
+  display: flex;
+  gap: 24px;
+}
+.projects-item {
+}
+.projects-img {
+}

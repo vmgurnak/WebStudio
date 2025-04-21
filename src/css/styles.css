@@ -1,25 +1,195 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./fonts.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./mobile-menu.css');
+@import url('./advanteges.css');
+@import url('./projects.css');
+@import url('./team.css');
+@import url('./customers.css');
+@import url('./footer.css');
+@import url('./modal-window.css');
+
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+
+/* Variables*/
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  /* Color */
+  --iris: #4d5ae5;
+  --navy-blue: #2e2f42;
+  --late-slate: #8e8f99;
+  --slate: #434455;
+  --ocean: #404bbf;
+  --cloud: #f4f4fd;
+  --white: #fff;
+  --cornflower: #e7e9fc;
+  --green: #31d0aa;
+  --dairy: #fcfcfc;
+
+  /* Text */
+  --font-main: 'Roboto', sans-serif;
+  --font-logo: 'Raleway', sans-serif;
+
+  /* Transition*/
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-modal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-overlay: 300ms ease-in;
+
+  /* Adaptive */
+  --mob-width: 428px;
+  --tablet-width: 768px;
+  --pc-width: 1158px;
+
+  --count-advanteges: 4;
+}
+
+/* -----------CONTAINER------------ */
+
+.container {
+  max-width: 428px;
+
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+/* ------------BASE STYLES------------ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.btn {
+  display: block;
+  min-width: 165px;
+  height: 56px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: var(--iris);
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  margin-left: auto;
+  margin-right: auto;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--anim);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--ocean);
+}
+
+.footer-text-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+/* -----------SOCIAL ICONS----------- */
+
+.icons-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-item {
+  width: 40px;
+  height: 40px;
+}
+
+.icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--cloud);
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: var(--iris);
+
+  transition: background-color var(--anim);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* ------------Visually-hidden----------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
