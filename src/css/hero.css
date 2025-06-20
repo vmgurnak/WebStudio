@@ -1,12 +1,6 @@
 /* ----------------HERO--------------- */
 
-.hero-title {
-}
-
-.hero-btn {
-}
-
-.hero {
+.hero.section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +24,7 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero {
+  .hero.section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -41,7 +35,7 @@
 
 /* Tablet screen */
 @media only screen and (min-width: 429px) {
-  .hero {
+  .hero.section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -53,7 +47,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero.section {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -65,7 +59,7 @@
 
 /* Desktop screen */
 @media only screen and (min-width: 769px) {
-  .hero {
+  .hero.section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -88,13 +82,10 @@
 }
 
 @media only screen and (min-width: 1158px) {
-  .hero {
+  .hero.section {
     padding-top: 188px;
     padding-bottom: 188px;
   }
-}
-
-.hero-container {
 }
 
 .hero-title {

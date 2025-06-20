@@ -1,17 +1,14 @@
 /* ----------------PROJECTS--------------- */
 
-.projects {
+.projects.section {
   padding-top: 0;
   display: none;
 }
 
 @media only screen and (min-width: 1158px) {
-  .projects {
+  .projects.section {
     display: block;
   }
-}
-
-.projects-container {
 }
 
 .projects-title {
@@ -28,8 +25,4 @@
 .projects-list {
   display: flex;
   gap: 24px;
-}
-.projects-item {
-}
-.projects-img {
 }

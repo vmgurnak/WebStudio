@@ -1,31 +1,21 @@
 /* ----------------PORTFOLIO--------------- */
 
-.portfolio {
+.portfolio.section {
   padding-top: 48px;
   padding-bottom: 48px;
-}
 
-@media only screen and (min-width: 768px) {
-  .portfolio {
+  @media (min-width: 768px) {
     padding-top: 64px;
     padding-bottom: 96px;
   }
-}
 
-@media only screen and (min-width: 1158px) {
-  .portfolio {
+  @media (min-width: 1158px) {
     padding-top: 100px;
     padding-bottom: 120px;
   }
 }
 
-.portfolio-container {
-}
-
-.portfolio-title-hidden {
-}
-
-.portfolio-list {
+.portfolio-list.list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -34,23 +24,16 @@
 
   width: 270px;
   margin-bottom: 48px;
-}
 
-@media only screen and (min-width: 768px) {
-  .portfolio-list {
+  @media (min-width: 768px) {
     justify-content: center;
     width: 100%;
     margin-bottom: 64px;
   }
-}
 
-@media only screen and (min-width: 1158px) {
-  .portfolio-list {
+  @media (min-width: 1158px) {
     margin-bottom: 72px;
   }
-}
-
-.portfolio-list-item {
 }
 
 .portfolio-btn {

@@ -1,5 +1,5 @@
-import 'modern-normalize';
+// import 'modern-normalize';
 
-import './js/mobile-menu';
+import './js/mobile-menu.js';
 import './js/modal';
 import './js/inputmask';
